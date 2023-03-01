@@ -1,0 +1,20 @@
+{%extends "core.html"%}
+{%load static %}
+
+
+{%block css_files%}
+
+{% endblock %}
+{%block core_body%}
+
+  <article class ="post">
+        <a  href=" {%url 'blog:full-post' item.slug %}">
+        <img src= "{{item.images.url}}" alt="{{item.title}}" wide="500" height="500"/>
+        <div class = "post__content">
+        <h3>{{item.title}}</h3>
+          <p>{{item.content}}</p>
+        </div>
+
+      </a>
+  </article>
+{%endblock%}

@@ -1,0 +1,8 @@
+{
+ "editor.wrappingIndent": "indent",
+"editor.tabSize": 1,
+"workbench.tree.indent": 4,
+"html.format.indentInnerHtml": true,
+"html.format.indentHandlebars": true,
+"editor.detectIndentation": true
+}

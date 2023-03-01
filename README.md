@@ -1,2 +1,2 @@
-# My-Blog
-A simple responsive blog made with django template lamguage
+# Blog
+blog project with DTL updated with Rest API
