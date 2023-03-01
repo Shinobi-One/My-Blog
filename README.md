@@ -1,2 +1,2 @@
 # My-Blog
-A simple responsive blog made with django template lamguage
+A simple responsive blog made with django template language
