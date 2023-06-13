@@ -1,16 +1,16 @@
 {% extends "core.html"%}
 {% load static %}
 
+{%block css_files %}
+  <link rel="stylesheet" href= "/static/post.css"/>
+  <link rel="stylesheet" href="/static/full_post.css">
 
+{%endblock%}
 {%block core_title%}
 {{match.slug}}
 {%endblock%}
 
-{%block css_files %}
-  <link rel="stylesheet" href="{% static "blog\post.css" %}" />
-  <link rel="stylesheet" href="{% static "blog\full_post.css" %}"/>
 
-{%endblock%}
 
 {%block core_body%}
 
@@ -18,7 +18,7 @@
     <h2>{{match.slug}}</h2>
     <article>
       <img src="{{match.images.url}}" alt="{{match.title}}"/>
-      <address> BY <a href = "mailto:{{match.author_post.email}}"">{{match.author_post}}</a></address>"
+      <address> BY <a href = "mailto:{{match.author_post.email}}">{{match.author_post}}</a></address>"
       <div> Updated on <time>{{match.date}}</time> </div>
       </address>
     </article>

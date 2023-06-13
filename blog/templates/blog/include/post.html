@@ -1,11 +1,5 @@
-{%extends "core.html"%}
-{%load static %}
 
 
-{%block css_files%}
-
-{% endblock %}
-{%block core_body%}
 
   <article class ="post">
         <a  href=" {%url 'blog:full-post' item.slug %}">
@@ -17,4 +11,3 @@
 
       </a>
   </article>
-{%endblock%}

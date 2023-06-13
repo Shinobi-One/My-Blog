@@ -1,14 +1,14 @@
 {% extends "core.html"%}
 {%load static%}
-
+{%block css_files %}
+  <link rel="stylesheet" href="/static/all-post.css"/>
+  <link rel="stylesheet" href="/static/post.css"/>
+{%endblock%}
 {%block core_title%}
 All posts
 {%endblock%}
 
-{%block css_files %}
-  <link rel="stylesheet" href="{% static "blog\all-post.css" %}"/>
-  <link rel="stylesheet" href="{% static "blog\post.css" %}"/>
-{%endblock%}
+
 
 {%block core_body%}
 

@@ -2,21 +2,22 @@
 {%load static%}
 
 
+{%block css_files %}
+    <link rel="stylesheet" href="/static/index.css">
+    <link rel="stylesheet" href="/static/post.css">
+{%endblock%}
 
 {%block core_title %}
     Welcome Traveler this is my blog !
 {% endblock %}
 
-{%block css_files %}
-    <link rel="stylesheet" href="{% static "blog/post.css" %}"/>   
-    <link rel="stylesheet" href="{% static "blog/index.css" %}"/>
-{%endblock%}
 
 
 {%block core_body%}
-<section id="welcome">
+
+    <section id="welcome">
     <header>
-        <img src="{%static "blog\images\hack.jpg" %}" alt="Hosein The Author of this blog"/>
+        <img src="{%static "/me" %}" alt="Hosein The Author of this blog"/>
         <h2> Welcome to my Blog </h2>
     </header>
         <p> Hi I'm Hosein Vazife and I love to blog about tech and programming !</p>
@@ -30,14 +31,37 @@
     </ul>
 </section>
 
-<section id="about">
-    <h2>What I Do ?</h2>
-    <p>Welcome to my blog , I love programming and help people to get better 
+
+   <footer  class="bg-light text-center text-lg-start">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-12 ">
+
+
+         <p class=" h2">What I Do ?</p>
+    <p class="h3">Welcome to my blog , I love programming and help people to get better
     </p>
-    <p> my goal is to be a good developer and I would be honored
+    <p class="h4"> my goal is to be a good developer and I would be honored
         if you could help me
     </p>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+
+</footer>
 </section>
+
+
+
 {% endblock %}
 
 
